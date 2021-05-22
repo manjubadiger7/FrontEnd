@@ -1,0 +1,22 @@
+.container {
+    padding: 20px;
+}
+
+.card-header {
+    font-style: italic;
+}
+
+.list-group {
+    height: 100%;
+    width: 15rem;
+    padding-right: 20px;
+}
+
+.carousel {
+    padding-left: 25px;
+}
+
+.span {
+    font-size: 16px;
+    padding-right: 70px;
+}

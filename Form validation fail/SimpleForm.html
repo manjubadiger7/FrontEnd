@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width,
+               initial-scale=1.0">
+          <title>Simple Form Page</title>
+          <link rel="stylesheet" href="SimpleCSS.css">
+          <link rel="stylesheet"
+               href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+     </head>
+     <body>
+
+          <div class="container">
+               <div class="header">
+                    <h1>Sample Form</h1>
+               </div>
+               <form class="form" name="form" id="form" onsubmit="return
+                    validate()">
+                    <div class="form-control">
+                         <label class="formLabels" for="Name">Name *</label>
+                         <br>
+                         <input type="text" name="Name" placeholder="Firstname
+                              Lastname" id="Name">
+                         <label id="nameErr" class="error"></label>
+                    </div>
+
+                    <!-- <div class="form-control">
+                         <label class="formLabels" for="">User Name *</label>
+                         <br>
+                         <input type="email" name="username"
+                              placeholder="username" id="username">
+                         <label id="userNameError" style="color: red;
+                              visibility:
+                              hidden;">Invalid</label>
+                    </div> -->
+                    <!-- 
+                    <div class="form-control">
+                         <label class="formLabels" for="">Password *</label>
+                         <small>
+                              <ul>
+                                   <li>Should contain atleast 9 characters</li>
+                                   <li>Should contain atleast 2 uppercase
+                                        characters</li>
+                                   <li>Should contain 1 special character</li>
+                                   <li>Should contain 1 number</li>
+                              </ul>
+                         </small>
+                         <input type="password" name="password"
+                              placeholder="atleast 8 characters"
+                              id="password">
+
+                         <small>Error message</small>
+                    </div>
+
+                    <div class="form-control">
+                         <label class="formLabels" for="">Confirm
+                              Password *</label>
+                         <br>
+                         <input type="password" name="confirmPassword"
+                              placeholder="Confirm Password"
+                              id="confirmPassword">
+
+                         <small>Error message</small>
+                    </div>
+
+                    <div class="radioButton">
+                         <label class="formLabels" for="">User's
+                              Choice *</label>
+                         <input class="radioInput" name="gender"
+                              type="radio" id="male" value="male">
+                         Male
+                         <input class="radioInput" name="gender"
+                              type="radio" id="female" value="female">
+                         Female
+                         <input class="radioInput" name="gender"
+                              type="radio" id="others" value="other">
+                         Others
+                    </div>
+                    <div class="form-control">
+                         <label class="formLabels" for="">Address</label>
+                         <br>
+                         <textarea style="height: 100px;"
+                              class="address"
+                              type="text" rows="10" cols="30"
+                              placeholder="House
+                              No 43/44, Street Name">
+                         </textarea>
+
+                    </div>
+                    <div class="form-control">
+                         <label class="formLabels" for="">Profession
+                              *</label>
+                         <select id="" class="select"
+                              name="profession" id="profession">
+                              <option>Select</option>
+                              <option value="Business">Business</option>
+                              <option value="Govt Employee">Govt
+                                   Employee</option>
+                              <option value="Private
+                                   Employee">Private
+                                   Employee</option>
+                         </select>
+                    </div> -->
+                    <button type="submit"><strong>Submit</strong></button>
+                    <button type="reset"><strong>Reset</strong></button>
+
+               </form>
+
+          </div>
+          <script type="text/javascript" src="SimpleJS.js">
+
+     </script>
+     </body>
+
+</html>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="crossorigin="anonymous"></script>
+        <title>Document</title>
+        <link rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous">
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="sample.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="col-12">
+                <h1>Form</h1>
+            </div>
+            <div class="card">
+                <form id="regstraion_form" style="padding: 20px;">
+
+                    <!--  Name  -->
+                    <div class="form-group row">
+                        <label for="inputPassword" class="col-2
+                            col-form-label">Name</label>
+                        <div class="col-7">
+                            <input type="text" class="form-control"
+                                id="form_name" placeholder="Jhon adam" required>
+                        </div>
+                        <span class="error_form col-3" id="name_error_message"></span>
+                    </div>
+
+
+                    <!-- Username / email  -->
+                    <div class="form-group row justify-content-center">
+                        <label for="inputPassword" class="col-2
+                            col-form-label">User Name</label>
+                        <div class="col-7">
+                            <input type="text" class="form-control"
+                                id="form_user_name"
+                                placeholder="jhonadam@mail.com" required>
+                        </div>
+                        <span class="error_form col-3"
+                            id="user_name_error_message"></span>
+                    </div>
+
+
+                    <!--  Password  -->
+                    <div class="form-group row">
+                        <label for="inputPassword" class="col-2
+                            col-form-label">Password</label>
+                        <div class="col-7">
+                            <input type="password" class="form-control"
+                                id="form_password"
+                                placeholder="JhonAdam1234" required>
+                        </div>
+                        <span class="error_form col-3"
+                            id="password_error_message"></span>
+                    </div>
+                    <div class="form-group row justify-content-center"
+                        id="drop_down">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item font-italic text-danger">Atleast
+                                9
+                                characters</li>
+                            <li class="list-group-item font-italic text-danger">Atleast
+                                2
+                                Uppercase</li>
+                            <li class="list-group-item font-italic text-danger">Atleast
+                                one
+                                speacial
+                                character</li>
+                            <li class="list-group-item font-italic text-danger">Atleast
+                                1 number</li>
+                        </ul>
+                    </div>
+
+                    <!-- Confirm Password  -->
+                    <div class="form-group row">
+                        <label for="inputPassword" class="col-2
+                            col-form-label">Confirm Password</label>
+                        <div class="col-7">
+                            <input type="password" class="form-control"
+                                id="form_confirm_password"
+                                placeholder="JhonAdam1234" required>
+                        </div>
+                        <span class="error_form col-3"
+                            id="confirm_password_error_message"></span>
+                    </div>
+
+
+                    <!-- Gender  -->
+                    <div class="form-group row">
+                        <label for="inputPassword" class="col-2
+                            col-form-label">Gender</label>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio"
+                                name="inlineRadioOptions" id="inlineRadio1"
+                                value="option1" required>
+                            <label class="form-check-label" for="inlineRadio1">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio"
+                                name="inlineRadioOptions" id="inlineRadio2"
+                                value="option2" required>
+                            <label class="form-check-label" for="inlineRadio2">Female</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio"
+                                name="inlineRadioOptions" id="inlineRadio3"
+                                value="option3" required>
+                            <label class="form-check-label" for="inlineRadio3">Others
+                            </label>
+                        </div>
+                        <span class="error_form col-3"
+                            id="gender_error_message"></span>
+                    </div>
+
+
+                    <!-- Address  -->
+                    <div class="form-group row">
+                        <label for="inputPassword" class="col-2
+                            col-form-label">Address</label>
+                        <div class="col-7">
+                            <textarea type="text" id="form7"
+                                class="form-control"
+
+                                mdbInput></textarea>
+                        </div>
+                    </div>
+
+
+                    <!-- Prffession  -->
+                    <div class="form-group row">
+                        <label for="inputPassword" class="col-2
+                            col-form-label">Profession</label>
+                        <div class="col-7">
+                            <select class="form-control"
+                                id="form_profession">
+                                <option value="">Select</option>
+                                <option value="business">Business</option>
+                                <option value="private_empl">Private employee</option>
+                                <option value="govt_empl">Government employee</option>
+                            </select>
+                        </div>
+                        <span class="error_form col-3"
+                            id="profession_error_message"></span>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-1">
+
+                        </div>
+                        <div class="col-5">
+                            <button type="submit" class="btn btn-success
+                                btn-block">Submit</button>
+                        </div>
+                        <div class="col-5">
+                            <button type="reset" class="btn btn-primary
+                                btn-block">Reset</button>
+                        </div>
+                        <div class="col-1">
+
+                        </div>
+                    </div>
+
+
+                </form>
+
+
+            </div>
+
+
+        </div>
+
+        <script type="text/javascript">
+$(function () {
+
+    $("#name_error_message").hide();
+    $("#username_error_message").hide();
+    $("#drop_down").hide();
+    $("#password_error_message").hide();
+    $("#confirm_password_error_message").hide();
+    $("#gender_error_message").hide();
+    $("#profession_error_message").hide();
+
+    var error_name = false;
+    var error_userName = false;
+    var error_password = false;
+    var error_confirmPassword = false;
+    var error_proffession = false;
+
+    $("#form_name").focusout(function () {
+        check_name();
+    });
+    $("#form_user_name").focusout(function () {
+        check_user_name();
+    });
+    $("#form_password").focusin(function () {
+        $("#drop_down").slideDown(500);
+    });
+    $("#form_password").focusout(function () {
+        check_password();
+    });
+    $("#form_password").mouseleave(function () {
+        $("#drop_down").slideUp();
+    });
+    $("#form_confirm_password").focusout(function () {
+        check_confirm_password();
+    })
+    $("#form_profession").focusout(function () {
+        check_profession();
+    })
+
+
+
+
+    function check_name() {
+        var pattern = /^[a-zA-Z]*$/;
+        var name = $("#form_name").val();
+        if (pattern.test(name) && name !== '') {
+            $("#name_error_message").html("Valid Name");
+            $("#name_error_message").show();
+            $("#name_error_message").css("color", "green",);
+            error_name = true;
+        }
+        else {
+            $("#name_error_message").html("Should contain only characters");
+            $("#name_error_message").show();
+            $("#name_error_message").css("color", "red",);
+        }
+    }
+
+    function check_user_name() {
+        var pattern = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+        var user_name = $("#form_user_name").val();
+        if (pattern.test(user_name) && user_name !== '') {
+            $("#user_name_error_message").html("Valid User Name");
+            $("#user_name_error_message").show();
+            $("#user_name_error_message").css("color", "green",);
+            error_userName = true;
+        }
+        else {
+            $("#user_name_error_message").html("Invalid email !");
+            $("#user_name_error_message").show();
+            $("#user_name_error_message").css("color", "red",);
+        }
+    }
+
+    function check_password() {
+        var pattern = /^(?=.*\d)(?=.*[a-z]{2,})(?=.*[A-Z]{2,})[a-zA-Z0-9]{9,}$/;
+        var password = $("#form_password").val();
+        if (pattern.test(password) && password !== '') {
+
+            $("#password_error_message").html("Valid Password");
+            $("#password_error_message").show();
+            $("#password_error_message").css("color", "green",);
+            error_password = true;
+        }
+        else {
+            $("#password_error_message").html("Invalid  !");
+            $("#password_error_message").show();
+            $("#password_error_message").css("color", "red",);
+        }
+    }
+
+    function check_confirm_password() {
+        var confirm_password = $("#form_confirm_password").val();
+        var password = $("#form_password").val();
+        if (confirm_password == password && confirm_password !== '') {
+
+            $("#confirm_password_error_message").html("Password confirmed");
+            $("#confirm_password_error_message").show();
+            $("#confirm_password_error_message").css("color", "green",);
+            error_confirmPassword = true;
+
+        }
+        else {
+            $("#confirm_password_error_message").html("Password does not match!");
+            $("#confirm_password_error_message").show();
+            $("#confirm_password_error_message").css("color", "red",);
+        }
+    }
+
+    function check_gender() {
+        if ($("#inlineRadio1").prop("checked") == true || $("#inlineRadio2").prop("checked") == true || $("#inlineRadio3").prop("checked") == true) {
+            $("#gender_error_message").html("");
+            $("#gender_error_message").show();
+            $("#gender_error_message").css("color", "green",);
+            error_gender = true;
+        }
+        else {
+            $("#gender_error_message").html("Please select gender");
+            $("#gender_error_message").show();
+            $("#gender_error_message").css("color", "red",);
+        }
+    }
+
+
+    function check_profession() {
+        var profession = $("#form_profession").val();
+        if (profession !== '') {
+
+            $("#profession_error_message").html("");
+            $("#profession_error_message").show();
+            $("#profession_error_message").css("color", "green",);
+            error_proffession = true;
+        }
+        else {
+            $("#profession_error_message").html("Please select frofession");
+            $("#profession_error_message").show();
+            $("#profession_error_message").css("color", "red",);
+        }
+    }
+
+    $("#regstraion_form").submit(function () {
+        error_name = false;
+        error_userName = false;
+        error_password = false;
+        error_confirmPassword = false;
+        error_proffession = false;
+
+        check_name();
+        check_user_name();
+        check_password();
+        check_confirm_password();
+        check_profession();
+
+        if (error_name === true && error_userName === true && error_password === true && error_confirmPassword === true && error_proffession === true) {
+            alert("Registraion is successfull");
+            return false;
+        }
+        else {
+            alert("Please fill the form correctly");
+
+            return false
+
+        }
+
+    });
+
+});
+        </script>
+    </body>
+</html>

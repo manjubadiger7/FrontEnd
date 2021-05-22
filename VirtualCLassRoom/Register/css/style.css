@@ -1,0 +1,17 @@
+.container {
+    padding: 50px;
+}
+
+.card {
+    width: 50rem;
+    justify-content: center;
+    margin-left: 4rem;
+}
+
+.card-header {
+    text-align: center;
+}
+
+body {
+    background: linear-gradient(to top left, #33ccff 0%, #ff99cc 100%);
+}
